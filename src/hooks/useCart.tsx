@@ -87,7 +87,8 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
         return
       }
-
+      toast.error('Erro na remoção do produto')
+      
     } catch {
       toast.error('Erro na remoção do produto')
     }
